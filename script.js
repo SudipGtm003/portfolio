@@ -24,6 +24,45 @@ if (visitorCount) {
   visitorCount.textContent = currentVisits;
 }
 
+const photoCard = document.querySelector('.photo-card');
+const profileImage = photoCard ? photoCard.querySelector('img') : null;
+
+if (photoCard && profileImage) {
+  const photos = [
+    'assets/profile.jpg',
+    'assets/photo2.jpg',
+    'assets/photo3.jpg',
+    'assets/photo4.jpg'
+  ];
+
+  // Preload so switching feels instant
+  photos.forEach(src => {
+    const preload = new Image();
+    preload.src = src;
+  });
+
+  let photoIndex = 0;
+
+  const showNextPhoto = () => {
+    photoIndex = (photoIndex + 1) % photos.length;
+    profileImage.classList.add('swapping');
+
+    window.setTimeout(() => {
+      profileImage.src = photos[photoIndex];
+      profileImage.classList.remove('swapping');
+    }, 220);
+  };
+
+  photoCard.addEventListener('click', showNextPhoto);
+
+  photoCard.addEventListener('keydown', event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      showNextPhoto();
+    }
+  });
+}
+
 const form = document.getElementById('contactForm');
 if (form) {
   form.addEventListener('submit', () => {

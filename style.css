@@ -262,6 +262,8 @@ h1 {
   transform: rotate(2deg);
   animation: floatImage 6s ease-in-out infinite;
   transition: transform 0.4s ease;
+
+  cursor: pointer;
 }
 
 .photo-card img {
@@ -275,6 +277,24 @@ h1 {
   display: block;
 
   animation: softZoom 8s ease-in-out infinite;
+
+  transition: opacity 0.25s ease;
+}
+
+.photo-card img.swapping {
+  opacity: 0;
+}
+
+.photo-hint {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.photo-hint i {
+  color: var(--brand);
 }
 
 .photo-card:hover {
