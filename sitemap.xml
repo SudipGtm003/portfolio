@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 <url>
 <loc>https://sudipgautam.info.np/</loc>
+<lastmod>2026-10-01</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1.0</priority>
-</url>
 
+<image:image>
+<image:loc>https://sudipgautam.info.np/assets/sudip-gautam.jpg</image:loc>
+<image:title>Sudip Gautam - Web Developer &amp; Vedic Astrologer</image:title>
+<image:caption>Sudip Gautam, a Nepali Web Developer, Designer and Vedic Astrologer</image:caption>
+</image:image>
+
+<image:image>
+<image:loc>https://sudipgautam.info.np/assets/photo2.jpg</image:loc>
+<image:title>Sudip Gautam portrait photo</image:title>
+<image:caption>Portrait photo of Sudip Gautam from Nepal</image:caption>
+</image:image>
+
+</url>
 </urlset>
