@@ -3,13 +3,14 @@
   "short_name": "Sudip",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a",
+  "background_color": "#08111f",
+  "theme_color": "#08111f",
   "icons": [
     {
-      "src": "/favicon.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/974777.png",
+      "sizes": "340x431",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

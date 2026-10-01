@@ -19,6 +19,9 @@ html {
   --brand-2: #2563eb;
   --line: rgba(148, 163, 184, 0.22);
   --shadow: 0 24px 80px rgba(2, 8, 23, 0.38);
+  --header-bg: rgba(8, 17, 31, 0.58);
+  --field-bg: rgba(255, 255, 255, 0.06);
+  --orb-opacity: 0.28;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,6 +32,9 @@ html {
     --muted: #526174;
     --line: rgba(15, 23, 42, 0.12);
     --shadow: 0 24px 70px rgba(37, 99, 235, 0.12);
+    --header-bg: rgba(247, 251, 255, 0.78);
+    --field-bg: rgba(15, 23, 42, 0.05);
+    --orb-opacity: 0.18;
   }
 }
 
@@ -54,7 +60,7 @@ a {
   height: 280px;
   border-radius: 50%;
   filter: blur(40px);
-  opacity: 0.28;
+  opacity: var(--orb-opacity);
   z-index: -1;
   animation: float 10s ease-in-out infinite alternate;
 }
@@ -97,7 +103,7 @@ a {
   padding: 18px 8%;
 
   backdrop-filter: blur(16px);
-  background: rgba(8, 17, 31, 0.58);
+  background: var(--header-bg);
   border-bottom: 1px solid var(--line);
 }
 
@@ -469,7 +475,7 @@ textarea {
 
   padding: 14px 16px;
 
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--field-bg);
   color: var(--text);
 
   font: inherit;
