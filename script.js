@@ -30,9 +30,9 @@ const profileImage = photoCard ? photoCard.querySelector('img') : null;
 if (photoCard && profileImage) {
   const photos = [
     'assets/profile.jpg',
+    'assets/photo5.jpg',
     'assets/photo2.jpg',
-    'assets/photo3.jpg',
-    'assets/photo4.jpg'
+    'assets/photo3.jpg'
   ];
 
   // Preload so switching feels instant
