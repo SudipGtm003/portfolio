@@ -633,10 +633,6 @@ footer {
   .quick-stats {
     justify-content: center;
   }
-
-  .hero-image-wrap {
-    order: -1;
-  }
 }
 
 @media (max-width: 860px) {
