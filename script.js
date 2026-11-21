@@ -81,7 +81,6 @@ const projects = {
   astrology: {
     date: 'Latest project',
     title: 'Vedic Astrology & Panchanga Website',
-    tech: 'Python, JavaScript, TypeScript, PostgreSQL, AI Integration | 2025-2',
     details: [
       'Built a Panchanga system that generates daily, monthly, and yearly calendars for 300 years (BS 1900–2200).',
       'Developed custom calculation methods using Vedic astrology formulas to calculate Tithi, Nakshatra, Yoga, Karana, Chandra Rashi, planetary positions, sunrise, and sunset.',
@@ -95,7 +94,6 @@ const projects = {
   learning: {
     date: 'Vedic Astrology Learning Platform',
     title: 'Vedic Astrology Learning Platform',
-    tech: 'HTML, CSS, JavaScript, TypeScript, AI Integration | 2026',
     details: [
       'Developed an online learning platform focused on Vedic astrology, covering Rashi, Graha, Bhava, Nakshatra, Tithi, and other fundamental astrology concepts.',
       'Created learning modules explaining planetary positions, house placements, zodiac signs, their effects, and challenges in Vedic astrology.',
@@ -110,7 +108,6 @@ const projects = {
 
 const modalProjectDate = document.getElementById('modalProjectDate');
 const modalProjectTitle = document.getElementById('modalProjectTitle');
-const modalProjectTech = document.getElementById('modalProjectTech');
 const modalProjectDetails = document.getElementById('modalProjectDetails');
 const modalProjectActions = document.getElementById('modalProjectActions');
 
@@ -124,7 +121,6 @@ const openProjectModal = (event) => {
   // Populate modal content
   if (modalProjectDate) modalProjectDate.textContent = project.date;
   if (modalProjectTitle) modalProjectTitle.textContent = project.title;
-  if (modalProjectTech) modalProjectTech.innerHTML = `<strong>${project.tech}</strong>`;
 
   // Render details list
   if (modalProjectDetails) {
