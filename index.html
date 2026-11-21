@@ -222,7 +222,7 @@
 
       <div class="cards">
         <article class="card">
-          <h3>Frontend Development</h3>
+          <h3>Full stack Developer</h3>
           <p>
             Clean, responsive landing pages and portfolio websites with modern layouts websites focused on speed and usability.
           </p>
@@ -244,8 +244,8 @@
       </div>
 
       <div class="cards">
-        <article class="card">
-          <p class="date">Latest project</p>
+        <article class="card project-card" data-project="astrology" role="button" tabindex="0" aria-label="View project details">
+          <p class="date"></p>
           <h3>Nepal Vedic Astrology & Panchanga</h3>
           <p>A live project for astrology and Panchanga information.</p>
           <a class="btn ghost project-link" href="https://nepal-vedic-astrology-and-panchanga-289622525399.asia-southeast1.run.app/" target="_blank" rel="noreferrer">
@@ -253,11 +253,26 @@
           </a>
         </article>
 
-        <article class="card">
-          <p class="date">Coming soon</p>
-          <h3>Business Portfolio</h3>
-          <p>A showcase of my work and achievements in the business world.</p>
+        <article class="card project-card" data-project="learning" role="button" tabindex="0" aria-label="View project details">
+          
+          <h3>Vedic Astrology Learning Platform</h3>
+          <p>An online learning platform for Vedic astrology concepts.</p>
         </article>
+      </div>
+    </section>
+
+    <!-- Project Detail Modal -->
+    <section class="project-modal" id="projectModal" aria-hidden="true">
+      <div class="project-modal-backdrop" aria-hidden="true"></div>
+      <div class="project-modal-content">
+        <button class="project-modal-close" aria-label="Close project details">&times;</button>
+        <div class="project-modal-body">
+          <p class="date" id="modalProjectDate">Latest project</p>
+          <h2 id="modalProjectTitle">Project Title</h2>
+          <p id="modalProjectTech"><strong>Tech stack</strong> | Year</p>
+          <ul id="modalProjectDetails" class="project-details"></ul>
+          <div class="project-modal-actions" id="modalProjectActions"></div>
+        </div>
       </div>
     </section>
 
@@ -284,9 +299,9 @@
             <span>GitHub</span>
           </a>
 
-          <a href="https://www.instagram.com/sudipgautam9" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-instagram"></i>
-            <span>Instagram</span>
+          <a href="https://www.linkedin.com/in/sudip-gtm" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
           </a>
         </div>
 

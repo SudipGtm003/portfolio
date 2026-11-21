@@ -417,6 +417,94 @@ h2 {
   background: transparent;
 }
 
+.project-card {
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.65);
+}
+
+.project-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.project-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 17, 31, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.project-modal-content {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  padding: 32px;
+  max-width: 560px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow);
+}
+
+.project-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 4px;
+}
+
+.project-modal-close:hover {
+  color: var(--text);
+}
+
+.project-modal-body h2 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.project-modal-body p {
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.project-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.project-details {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 16px 0;
+  line-height: 1.7;
+}
+
+.project-details li {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.project-details li strong {
+  color: var(--text);
+}
+
 .contact-info {
   display: grid;
   gap: 16px;
@@ -527,6 +615,30 @@ footer {
   border-top: 1px solid var(--line);
 }
 
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .quick-stats {
+    justify-content: center;
+  }
+
+  .hero-image-wrap {
+    order: -1;
+  }
+}
+
 @media (max-width: 860px) {
   .menu-btn {
     display: block;
@@ -584,6 +696,60 @@ footer {
     100% {
       transform: translateY(0);
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .project-modal {
+    padding: 16px;
+  }
+
+  .project-modal-content {
+    padding: 24px;
+    border-radius: 20px;
+    max-height: 95vh;
+  }
+
+  .project-modal-close {
+    top: 12px;
+    right: 12px;
+    font-size: 1.5rem;
+  }
+
+  .project-modal-body h2 {
+    font-size: 1.25rem;
+  }
+
+  .project-modal-actions {
+    flex-direction: column;
+  }
+
+  .project-modal-actions .btn.primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 76px 6%;
+  }
+
+  .contact-info a {
+    padding: 12px;
+    font-size: 0.92rem;
+  }
+
+  .contact-info i {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 9vw, 4rem);
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
   }
 }
 
