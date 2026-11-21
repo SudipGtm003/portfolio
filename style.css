@@ -635,7 +635,7 @@ footer {
   }
 
   .hero-image-wrap {
-    order: -1;
+    order: 1;
   }
 }
 
